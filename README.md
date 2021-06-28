@@ -1,6 +1,6 @@
 # csdd-lists
 
-**Personal Consumption List Platform 个人消费清单平台**
+**Personal consumption list platform 个人消费清单平台**
 
 ## 写在最前
 
@@ -38,6 +38,12 @@ nodemon index.js
 
 ```
 .
+├─ README.assets                      项目演示图片资源
+│    ├─ 1.gif
+│    ├─ 2.gif
+│    ├─ 3.gif
+│    └─ 4.gif
+├─ README.md
 ├─ package.json                       配置、依赖管理
 ├─ server                             
 │    ├─ api.js                        服务器请求接口封装
@@ -80,7 +86,7 @@ nodemon index.js
 
 ## 功能演示
 
-- **登录、页面展示**
+- **登录、页面展示、多语言切换**
 
 ![1](README.assets/1.gif)
 
@@ -99,3 +105,4 @@ nodemon index.js
 ## 后续功能
 
 当初想实现的功能大致都实现了，剩下的都是小问题了，后续遇到啥再修修补补吧~
+

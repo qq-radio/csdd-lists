@@ -4,7 +4,7 @@
       <img src="../../public/about.jpg" alt="about.jpg" />
       <div class="contact">
         <a href="https://github.com/csdd-21" target="_blank"><i class="iconfont icon-github"></i></a>
-        <a href="http://localhost:8080" target="_blank"><i class="iconfont icon-blog"></i></a>
+        <a href="https://github.com/csdd-21/csdd-blog" target="_blank"><i class="iconfont icon-blog"></i></a>
       </div>
     </div>
     <div class="two">
@@ -29,7 +29,7 @@ export default {
   props: {},
   data() {
     return {
-      activeNames: ["1"],
+      activeNames: ["2"],
       postAbout: "",
       postOther: "",
     };

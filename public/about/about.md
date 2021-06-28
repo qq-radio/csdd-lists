@@ -1,4 +1,6 @@
-## csdd-lists —— Personal Consumption List Platform 个人消费清单平台
+## csdd-lists
+
+**Personal consumption list platform 个人消费清单平台**
 
 ### 写在最前
 
@@ -13,7 +15,7 @@
 - element-plus
 - bootstrap
 - echarts
-- sass
+- less
 - vue-i18n
 
 ### 后端技术栈
