@@ -25,7 +25,7 @@ nodemon index.js
 - element-plus
 - bootstrap
 - echarts
-- sass
+- less
 - vue-i18n
 
 ## 后端技术栈
