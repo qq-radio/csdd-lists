@@ -99,26 +99,39 @@ export default {
       }
     },
 
-    set_activeTab() {
+    set_activeTab(i) {
       // 首次加载
-      if (sessionStorage.hasOwnProperty("activeTab") == false) {
-        sessionStorage.setItem("activeTab", JSON.stringify(this.activeTab));
+      if (!i) {
+        if (sessionStorage.hasOwnProperty("activeTab") == false) {
+          sessionStorage.setItem("activeTab", JSON.stringify(this.activeTab));
+        } else {
+          this.activeTab = JSON.parse(sessionStorage.getItem("activeTab"));
+        }
+        console.log("set_activeTab ---- 1", this.activeTab);
+        this.$router.push({ name: this.activeTab });
       } else {
-        this.activeTab = JSON.parse(sessionStorage.getItem("activeTab"));
+        // 点击tab
+        // this.activeTab = i.props.name;
+        // this.$router.push({ name: this.activeTab });
+        // sessionStorage.setItem("activeTab", JSON.stringify(this.activeTab));
       }
-      this.$router.push({ name: this.activeTab });
     },
 
     handle_beforeLeave(tab) {
-      let arr = this.lists[this.year];
-      if (arr) {
-        for (let i = 0; i < arr.length; i++) {
-          if (arr[i].action == "add" || arr[i].action == "edit") {
-            this.$alert(this.$t("alert.change_page"), this.$t("alert.change_page_title"), { confirmButtonText: this.$t("btn.save"), customClass: "infoBox" });
-            return false;
-          }
+      // 编辑中，未保存的
+      for (let i = 0; i < this.lists[this.year].length; i++) {
+        if (this.lists[this.year][i].action == "edit") {
+          this.$confirm(this.$t("confirm.save"), this.$t("confirm.save_title"), { confirmButtonText: this.$t("btn.save"), cancelButtonText: this.$t("btn.cancel_save"), customClass: "infoBox" })
+            .then(() => {
+              console.log("save");
+            })
+            .catch(() => {
+              console.log("cancel");
+            });
+          return false;
         }
       }
+      // 直接跳
       this.$router.push({ name: tab });
       sessionStorage.setItem("activeTab", JSON.stringify(tab));
     },

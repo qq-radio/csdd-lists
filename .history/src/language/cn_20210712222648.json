@@ -75,7 +75,9 @@
     "add_failed": "添加失败，该月份已存在，不可重复",
     "edit_success": "编辑成功",
     "edit_failed": "编辑失败，该月份已存在，不可重复",
-    "delete_success": "删除成功"
+    "delete_success": "删除成功",
+    "change_page_title":"提示",
+    "change_page":"数据正在编辑中，请保存后再进行页面跳转"
   },
   "alert": {
     "register_success_title": "注册成功",
@@ -88,8 +90,6 @@
     "auth_failed_title": "验证失败",
     "auth_failed": "用户名或密码错误",
     "empty_title": "保存失败",
-    "empty": "表格数据“月份”、“税后月薪”不能为空",
-    "change_page_title": "提示",
-    "change_page": "数据正在编辑中，请保存后再进行页面跳转"
+    "empty": "表格数据“月份”、“税后月薪”不能为空"
   }
 }

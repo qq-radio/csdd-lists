@@ -14,9 +14,10 @@ export default {
     set_language() {
       if (sessionStorage.hasOwnProperty("language") == false) {
         sessionStorage.setItem("language", JSON.stringify("cn"));
+        sessionStorage.setItem("language_1", "cn");
         this.$i18n.locale = "cn";
       } else {
-        this.$i18n.locale = JSON.parse(sessionStorage.getItem("language"));
+        this.$i18n.locale = sessionStorage.getItem("language");
       }
     },
   },

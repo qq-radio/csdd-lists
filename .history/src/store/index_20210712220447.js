@@ -6,6 +6,7 @@ export default createStore({
     lists: {},
     year: "",
     monthArr: [],
+    saveAll:false,  
   },
   mutations: {
     SET_LISTS(state, payload) {

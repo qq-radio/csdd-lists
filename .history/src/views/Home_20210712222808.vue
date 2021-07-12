@@ -99,14 +99,21 @@ export default {
       }
     },
 
-    set_activeTab() {
+    set_activeTab(i) {
       // 首次加载
-      if (sessionStorage.hasOwnProperty("activeTab") == false) {
-        sessionStorage.setItem("activeTab", JSON.stringify(this.activeTab));
+      if (!i) {
+        if (sessionStorage.hasOwnProperty("activeTab") == false) {
+          sessionStorage.setItem("activeTab", JSON.stringify(this.activeTab));
+        } else {
+          this.activeTab = JSON.parse(sessionStorage.getItem("activeTab"));
+        }
+        this.$router.push({ name: this.activeTab });
       } else {
-        this.activeTab = JSON.parse(sessionStorage.getItem("activeTab"));
+        // 点击tab
+        // this.activeTab = i.props.name;
+        // this.$router.push({ name: this.activeTab });
+        // sessionStorage.setItem("activeTab", JSON.stringify(this.activeTab));
       }
-      this.$router.push({ name: this.activeTab });
     },
 
     handle_beforeLeave(tab) {

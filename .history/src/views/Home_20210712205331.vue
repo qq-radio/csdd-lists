@@ -99,28 +99,31 @@ export default {
       }
     },
 
-    set_activeTab() {
+    set_activeTab(i) {
       // 首次加载
-      if (sessionStorage.hasOwnProperty("activeTab") == false) {
-        sessionStorage.setItem("activeTab", JSON.stringify(this.activeTab));
+      if (!i) {
+        if (sessionStorage.hasOwnProperty("activeTab") == false) {
+          sessionStorage.setItem("activeTab", JSON.stringify(this.activeTab));
+        } else {
+          this.activeTab = JSON.parse(sessionStorage.getItem("activeTab"));
+        }
+        console.log("set_activeTab ---- 1", this.activeTab);
+        this.$router.push({ name: this.activeTab });
       } else {
-        this.activeTab = JSON.parse(sessionStorage.getItem("activeTab"));
+        // 点击tab
+        // this.activeTab = i.props.name;
+        this.$router.push({ name: this.activeTab });
+        sessionStorage.setItem("activeTab", JSON.stringify(this.activeTab));
       }
-      this.$router.push({ name: this.activeTab });
     },
 
-    handle_beforeLeave(tab) {
-      let arr = this.lists[this.year];
-      if (arr) {
-        for (let i = 0; i < arr.length; i++) {
-          if (arr[i].action == "add" || arr[i].action == "edit") {
-            this.$alert(this.$t("alert.change_page"), this.$t("alert.change_page_title"), { confirmButtonText: this.$t("btn.save"), customClass: "infoBox" });
-            return false;
-          }
+    handle_beforeLeave() {
+      for (let i = 0; i < this.lists[this.year].length; i++) {
+        if (this.lists[this.year][i].action == "edit") {
+          this.$alert("是否保存", "提示", { confirmButtonText: "确定", cancelButtonText: "取消", customClass: "infoBox" });
+          return false;
         }
       }
-      this.$router.push({ name: tab });
-      sessionStorage.setItem("activeTab", JSON.stringify(tab));
     },
 
     set_year(i) {

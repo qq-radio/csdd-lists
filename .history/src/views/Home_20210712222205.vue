@@ -99,14 +99,21 @@ export default {
       }
     },
 
-    set_activeTab() {
+    set_activeTab(i) {
       // 首次加载
-      if (sessionStorage.hasOwnProperty("activeTab") == false) {
-        sessionStorage.setItem("activeTab", JSON.stringify(this.activeTab));
+      if (!i) {
+        if (sessionStorage.hasOwnProperty("activeTab") == false) {
+          sessionStorage.setItem("activeTab", JSON.stringify(this.activeTab));
+        } else {
+          this.activeTab = JSON.parse(sessionStorage.getItem("activeTab"));
+        }
+        this.$router.push({ name: this.activeTab });
       } else {
-        this.activeTab = JSON.parse(sessionStorage.getItem("activeTab"));
+        // 点击tab
+        // this.activeTab = i.props.name;
+        // this.$router.push({ name: this.activeTab });
+        // sessionStorage.setItem("activeTab", JSON.stringify(this.activeTab));
       }
-      this.$router.push({ name: this.activeTab });
     },
 
     handle_beforeLeave(tab) {
@@ -114,7 +121,13 @@ export default {
       if (arr) {
         for (let i = 0; i < arr.length; i++) {
           if (arr[i].action == "add" || arr[i].action == "edit") {
-            this.$alert(this.$t("alert.change_page"), this.$t("alert.change_page_title"), { confirmButtonText: this.$t("btn.save"), customClass: "infoBox" });
+            this.$confirm(this.$t("confirm.save"), this.$t("confirm.save_title"), { confirmButtonText: this.$t("btn.save"), cancelButtonText: this.$t("btn.cancel_save"), customClass: "infoBox" })
+              .then(() => {
+                console.log("save");
+              })
+              .catch(() => {
+                console.log("cancel");
+              });
             return false;
           }
         }

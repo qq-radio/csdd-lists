@@ -43,8 +43,9 @@ axios.interceptors.request.use((config) => {
   return Promise.reject(err);
 });
 
-// axios.interceptors.response.use((res) => {
-//   return Promise.resolve(res);
-// }, (err) => {
-//   return Promise.reject(err);
-// });
+axios.interceptors.response.use((res) => {
+  console.log('res ---11', res);
+  return Promise.resolve(res);
+}, (err) => {
+  return Promise.reject(err);
+});

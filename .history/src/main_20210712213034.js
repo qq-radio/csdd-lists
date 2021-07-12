@@ -1,4 +1,4 @@
-import { createApp, nextTick } from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
@@ -42,9 +42,3 @@ axios.interceptors.request.use((config) => {
 }, (err) => {
   return Promise.reject(err);
 });
-
-// axios.interceptors.response.use((res) => {
-//   return Promise.resolve(res);
-// }, (err) => {
-//   return Promise.reject(err);
-// });

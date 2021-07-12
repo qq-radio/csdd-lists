@@ -75,7 +75,9 @@
     "add_failed": "Added failed, the month already exists, can't set month value repeatable",
     "edit_success": "Edited success",
     "edit_failed": "Edited failed, the month already exists, can't set month value repeatable",
-    "delete_success": "Deleted success" 
+    "delete_success": "Deleted success",
+    "change_page_title":"hint",
+    "change_page":"The data is in edit state, please save them before change page"
   },
   "alert": {
     "register_success_title": "Register success",
@@ -88,8 +90,6 @@
     "auth_failed_title": "Authorization failed",
     "auth_failed": "Username or password incorrect",
     "empty_title":"Save failed",
-    "empty":"The data of month and afterSalary can't be empty",
-    "change_page_title":"hint",
-    "change_page":"The data is in edit state, please save them before change page"
+    "empty":"The data of month and afterSalary can't be empty"
   }
 }
