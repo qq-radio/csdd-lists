@@ -1,0 +1,49 @@
+{
+  "year":"Year",
+  "changePwd": "changePwd",
+  "quit": "quit",
+  "month": "month",
+  "afterSalary": "afterSalary",
+  "rent": "rent",
+  "utilities": "utilities",
+  "shop": "shop",
+  "remark": "remark",
+  "deposit": "deposit",
+  "action": "action",
+  "warn": "Add failed, can only add for 12 months at most",
+  "delete":"Are you sure to delete the data ?",
+  "tab": {
+    "table": "table",
+    "graphics": "graphics",
+    "more": "more"
+  },
+  "btn": {
+    "add": "add",
+    "edit": "edit",
+    "delete": "delete",
+    "save": "save",
+    "cancle": "cancle"
+  },
+  "graphics": {
+    "desc_line": "Year Consumption List Graphics",
+    "desc_pie": "Year Each Month Consumption List Graphics",
+    "desc_empty": "No Datas for current month",
+    "year": "Year",
+    "month": "Month",
+    "changeMonth": "Change Month",
+    "line": "line",
+    "pie": "pie"
+  },
+  "editUser":{
+    "step_1_title": "Step 1",
+    "step_1_desc": "User authentication",
+    "step_2_title": "Step 2",
+    "step_2_desc": "Set new password",
+    "step_3_title": "Step 3",
+    "step_3_desc": "Completed",
+    "username":"Username",
+    "password":"Password",
+    "new_password":"New password",
+    "new_password_again":"New password again"
+  }
+}

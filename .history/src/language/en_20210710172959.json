@@ -1,0 +1,35 @@
+{
+  "changePwd": "changePwd",
+  "quit": "quit",
+  "month": "month",
+  "afterSalary": "afterSalary",
+  "rent": "rent",
+  "utilities": "utilities",
+  "shop": "shop",
+  "remark": "remark",
+  "deposit": "deposit",
+  "action": "action",
+  "warn":"Add failed, can only add for 12 months at most",
+  "tab": {
+    "table": "table",
+    "graphics": "graphics",
+    "more": "more"
+  },
+  "btn": {
+    "add": "add",
+    "edit": "edit",
+    "delete": "delete",
+    "save": "save",
+    "cancle": "cancle"
+  },
+  "graphics": {
+    "desc_line": "Year Consumption List Graphics",
+    "desc_pie": "Year Each Month Consumption List Graphics",
+    "desc_empty":"No Datas for current month",
+    "year":"Year",
+    "month":"Month",
+    "changeMonth":"Change Month",
+    "line": "line",
+    "pie": "pie"
+  }
+}

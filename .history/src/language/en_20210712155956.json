@@ -1,0 +1,87 @@
+{
+  "year": "Year",
+  "changePwd": "changePwd",
+  "quit": "quit",
+  "month": "month",
+  "afterSalary": "afterSalary",
+  "rent": "rent",
+  "utilities": "utilities",
+  "shop": "shop",
+  "remark": "remark",
+  "deposit": "deposit",
+  "action": "action",
+  "delete": "Are you sure to delete this data ?",
+  "tab": {
+    "table": "table",
+    "graphics": "graphics",
+    "more": "more"
+  },
+  "btn": {
+    "register": "register",
+    "login": "login",
+    "add": "add",
+    "edit": "edit",
+    "delete": "delete",
+    "save": "save",
+    "cancel": "cancel",
+    "back": "back",
+    "sure": "sure",
+    "ensure": "sure",
+    "next_step": "next step"
+  },
+  "graphics": {
+    "desc_line": "Year Consumption List Graphics",
+    "desc_pie": "Year Each Month Consumption List Graphics",
+    "desc_empty": "No datas for current month",
+    "year": "year",
+    "month": "month",
+    "changeMonth": "change month",
+    "line": "line",
+    "pie": "pie"
+  },
+  "editUser": {
+    "step_1_title": "Step 1",
+    "step_1_desc": "User authentication",
+    "step_2_title": "Step 2",
+    "step_2_desc": "Set new password",
+    "step_3_title": "Step 3",
+    "step_3_desc": "Completed",
+    "username": "username",
+    "password": "password",
+    "new_password": "new password",
+    "new_password_again": "new password again",
+    "completed_info": "The new password was set successfully, the page will automatically redirect to home page after three seconds"
+  },
+  "form": {
+    "username": "username",
+    "password": "password"
+  },
+  "rules": {
+    "username": "Username is required",
+    "password": "Password is required",
+    "new_password": "New password is required",
+    "new_password_again": "Please type new password again"
+  },
+  "msg": {
+    "login_success": "Login success",
+    "auth_success": "Authorization success",
+    "set_success": "Set new password success",
+    "warn": "Add failed, can only add for 12 months at most",
+    "add_success": "Added success",
+    "add_failed": "Added failed, the month already exists, can't repeatable",
+    "edit_success": "Edited success",
+    "edit_failed": "Edited failed, the month already exists, can't repeatable",
+    "delete_success": "Deleted success"
+  },
+  "alert": {
+    "register_success_title": "Register success",
+    "register_success": "Register success, click sure to go to the home page",
+    "register_failed_title": "Register failed",
+    "register_failed_exist": "User already exist",
+    "login_failed_title": "Login failed",
+    "login_failed_unRegister": "User not registered",
+    "login_failed_wrongPassword ": "Incorrect password",
+    "auth_failed_title": "Authorization failed",
+    "auth_failed": "Username or password incorrect"
+  }
+}

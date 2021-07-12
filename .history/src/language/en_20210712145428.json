@@ -1,0 +1,69 @@
+{
+  "year": "Year",
+  "changePwd": "changePwd",
+  "quit": "quit",
+  "month": "month",
+  "afterSalary": "afterSalary",
+  "rent": "rent",
+  "utilities": "utilities",
+  "shop": "shop",
+  "remark": "remark",
+  "deposit": "deposit",
+  "action": "action",
+  "delete": "Are you sure to delete the data ?",
+  "tab": {
+    "table": "table",
+    "graphics": "graphics",
+    "more": "more"
+  },
+  "btn": {
+    "add": "add",
+    "edit": "edit",
+    "delete": "delete",
+    "save": "save",
+    "cancle": "cancle",
+    "back": "back",
+    "sure": "sure",
+    "next_step": "next step"
+  },
+  "graphics": {
+    "desc_line": "Year Consumption List Graphics",
+    "desc_pie": "Year Each Month Consumption List Graphics",
+    "desc_empty": "No Datas for current month",
+    "year": "Year",
+    "month": "Month",
+    "changeMonth": "Change Month",
+    "line": "line",
+    "pie": "pie"
+  },
+  "editUser": {
+    "step_1_title": "Step 1",
+    "step_1_desc": "User authentication",
+    "step_2_title": "Step 2",
+    "step_2_desc": "Set new password",
+    "step_3_title": "Step 3",
+    "step_3_desc": "Completed",
+    "username": "Username",
+    "password": "Password",
+    "new_password": "New password",
+    "new_password_again": "New password again",
+    "completed_info": "The new password was set successfully, the page will automatically redirect to home page after three seconds"
+  },
+  "rules": {
+    "username": "username is required",
+    "password": "password is required",
+    "new_password": "new password is required",
+    "new_password_again": "please type new password again"
+  },
+  "msg": {
+    "login_success": "login success",
+    "auth_success": "authorization success",
+    "set_success": "set new password success",
+    "warn": "Add failed, can only add for 12 months at most",
+    "add_success": "added success",
+    "add_failed": "added failed, the month already exists, can't repeatable",
+    "edit_success": "edited success",
+    "edit_repeat": "edited failed, the month already exists, can't repeatable",
+    "delete_success": "deleted success"
+  }
+}
