@@ -1,0 +1,57 @@
+@color: rgb(135, 137, 138);
+@bgColor: rgb(223, 236, 242);
+
+
+.table_warm {
+  @bgColor: rgb(250, 226, 218);
+}
+
+.table {
+  .add {
+    font-weight: 800;
+  }
+
+  /deep/ .el-form-item__content {
+    line-height: 30px;
+  }
+
+  .el-table /deep/ th {
+    color: @color;
+    font-weight: 600;
+  }
+
+  .el-table /deep/ td {
+    color: @color;
+
+    .el-input {
+      width: 100px;
+    }
+  }
+
+  .el-table /deep/ tr:hover td {
+    background-color: fade(@bgColor, 30%);
+  }
+
+  /deep/ .cell {
+    height: 32px;
+    line-height: 32px;
+  }
+}
+
+.el-select-dropdown__item {
+  color: @color;
+
+  &:hover {
+    font-weight: 700;
+    background-color: @bgColor;
+  }
+
+  &.selected {
+    color: rgb(107, 148, 167);
+    font-weight: 700;
+  }
+}
+
+.el-select-dropdown__item.is-disabled {
+  color: #d2d2d3;
+}
